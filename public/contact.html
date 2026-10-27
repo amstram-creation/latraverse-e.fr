@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — La Traverse</title>
+<meta name="description" content="Contacter Aline Debecker, La Traverse : téléphone, e-mail ou formulaire. Uzès, Nîmes, Avignon et environs.">
+<meta name="theme-color" content="#1d1f1a">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="La Traverse">
+<meta property="og:title" content="Contact — La Traverse">
+<meta property="og:description" content="Contacter Aline Debecker, La Traverse : téléphone, e-mail ou formulaire. Uzès, Nîmes, Avignon et environs.">
+<meta property="og:image" content="img/arche.jpg">
+<link rel="icon" type="image/png" href="img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/b/b.css">
+<script>document.documentElement.classList.add("js","theme-b")</script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/b/b.js" defer></script>
+</head>
+<body class="b page-contact">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<div class="voile" aria-hidden="true">
+  <svg viewBox="0 0 64 64"><path d="M14 58 V28 a18 18 0 0 1 36 0 V58"/></svg>
+</div>
+
+<header class="entete">
+  <div class="entete__in">
+    <a class="logo" href="index.html" aria-label="La Traverse, accueil">
+      <img src="img/logo-mark.png" alt="" width="34" height="36">
+      <span class="logo__nom">la traverse</span>
+    </a>
+    <div class="entete__actions">
+      <a class="pastille pastille--plein" href="contact.html">échanger</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><span class="burger__mot">menu</span><span></span><span></span></button>
+    </div>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html"><i>00</i>accueil</a></li>
+        <li><a href="accompagnement.html"><i>01</i>accompagnement psy &amp; coaching</a></li>
+        <li><a href="formation.html"><i>02</i>formation &amp; coaching pro</a></li>
+        <li><a href="approche.html"><i>03</i>l'approche</a></li>
+        <li><a href="marcher.html"><i>04</i>marcher, se ressourcer</a></li>
+        <li><a href="a-propos.html"><i>05</i>à propos</a></li>
+        <li><a href="contact.html" aria-current="page"><i>06</i>contact</a></li>
+      </ul>
+      <div class="nav__pied">
+        <p>Aline Debecker — psychologue, coach, formatrice</p>
+        <p><a href="tel:+33684660709">06 84 66 07 09</a> · <a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></p>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+<header class="tete-page">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal><span class="balise"></span>Contact</p>
+    <h1 data-split>Le premier pas, <em>une conversation.</em></h1>
+  </div>
+</header>
+
+<section class="section" style="padding-top:0" aria-label="Coordonnées et formulaire">
+  <div class="wrap contact-grille">
+    <div>
+      <p class="lead" data-reveal>Pour une question, un premier rendez-vous ou un projet pour votre structure, vous pouvez appeler, écrire ou utiliser le formulaire.</p>
+      <ul class="coord">
+        <li data-reveal><b>Téléphone</b><a href="tel:+33684660709">06 84 66 07 09</a></li>
+        <li data-reveal><b>E-mail</b><a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></li>
+        <li data-reveal><b>Cabinet</b><span>Castillon-du-Gard</span></li>
+        <li data-reveal><b>À distance</b><span>Consultations en visioconférence</span></li>
+      </ul>
+      <p class="main-ecrite" data-reveal>Réponse sous quelques jours.</p>
+    </div>
+
+    <form class="formulaire" action="envoi.php" method="post" data-reveal>
+      <p class="message-etat message-etat--ok" data-etat="ok" role="status" hidden>Merci, votre message a bien été envoyé. Aline vous répondra rapidement.</p>
+      <p class="message-etat message-etat--err" data-etat="err" role="alert" hidden>Le message n'a pas pu être envoyé. Vérifiez les champs ou écrivez directement à alinedebecker@gmail.com.</p>
+      <div class="duo">
+        <div class="champ"><label for="nom">Nom</label><input id="nom" name="nom" autocomplete="name" required maxlength="120"></div>
+        <div class="champ"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
+      </div>
+      <div class="duo">
+        <div class="champ"><label for="tel">Téléphone <span style="text-transform:none;letter-spacing:0;font-weight:400">(facultatif)</span></label><input id="tel" name="tel" type="tel" autocomplete="tel" maxlength="30"></div>
+        <div class="champ"><label for="objet">Votre demande</label>
+          <select id="objet" name="objet">
+            <option value="adulte">Un accompagnement pour moi</option>
+            <option value="parent">Un accompagnement parental</option>
+            <option value="ado">Un accompagnement pour mon adolescent ou enfant</option>
+            <option value="formation">Une formation ou un coaching pour une structure</option>
+            <option value="sante">Un espace pour professionnels de santé</option>
+            <option value="chemin">Le parcours Un chemin pour soi</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+      </div>
+      <div class="champ"><label for="message">Message</label><textarea id="message" name="message" required maxlength="5000"></textarea></div>
+      <div class="pot-de-miel" aria-hidden="true"><label for="site">Ne pas remplir</label><input id="site" name="site" tabindex="-1" autocomplete="off"></div>
+      <input type="hidden" name="t" id="t">
+      <label class="consent"><input type="checkbox" name="consentement" required> J'accepte que mes informations soient utilisées uniquement pour me répondre. Elles ne sont ni partagées, ni utilisées à d'autres fins.</label>
+      <p><button class="btn" type="submit">Envoyer <span class="fleche" aria-hidden="true">→</span></button></p>
+    </form>
+  </div>
+</section>
+<script>
+  // horodatage anti-robot + présélection de l'objet via ?objet=
+  document.getElementById("t").value = Date.now();
+  (function () { var o = new URLSearchParams(location.search).get("objet"); if (o) { var s = document.getElementById("objet"); if (s.querySelector('option[value="' + o + '"]')) s.value = o; } })();
+</script>
+</main>
+
+<footer class="pied">
+  <div class="wrap">
+    <div class="pied__haut">
+      <div>
+        <p class="pied__devise">transformer les passages en possibles.</p>
+        <p>Cabinet à Castillon-du-Gard · consultations à distance.<br>Interventions dans le Gard et alentour.</p>
+      </div>
+      <div>
+        <h2>Explorer</h2>
+        <ul>
+          <li><a href="accompagnement.html">Accompagnement psy &amp; coaching</a></li>
+          <li><a href="formation.html">Formation &amp; coaching pro</a></li>
+          <li><a href="un-chemin-pour-soi.html">Un chemin pour soi</a></li>
+          <li><a href="approche.html">L'approche</a></li>
+          <li><a href="marcher.html">Marcher, se ressourcer</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="tel:+33684660709">06 84 66 07 09</a></li>
+          <li><a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></li>
+          <li><a href="contact.html">Écrire un message</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="pied__geant" aria-hidden="true">la traverse</p>
+    <div class="pied__bas">
+      <span>© <span data-annee>2026</span> La Traverse — Aline Debecker</span>
+      <a href="mentions-legales.html">Mentions légales &amp; confidentialité</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
