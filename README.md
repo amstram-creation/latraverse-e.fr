@@ -1,5 +1,28 @@
 # La Traverse
 
+## Publication sur GitHub Pages
+
+Le dépôt `amstram-creation/latraverse-e.fr` est configuré pour utiliser le domaine `latraverse-e.fr` via le fichier `CNAME` à la racine.
+
+Dans GitHub, ouvrez **Settings → Pages** et vérifiez que la publication est activée depuis la branche `main` (racine du dépôt) ou par le workflow Pages choisi. Dans **Custom domain**, indiquez `latraverse-e.fr`. Après validation DNS, activez **Enforce HTTPS** lorsque GitHub le propose.
+
+Chez le fournisseur DNS du domaine, créez les quatre enregistrements `A` suivants pour l’hôte `@` :
+
+| Type | Hôte | Valeur |
+| --- | --- | --- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+
+Pour que `www.latraverse-e.fr` redirige également vers le domaine principal, ajoutez `CNAME` avec l’hôte `www` et la cible `amstram-creation.github.io`. Supprimez les anciens enregistrements concurrents pour `@` et `www` qui pointent vers un autre hébergeur. La propagation DNS et l’émission du certificat HTTPS peuvent prendre jusqu’à 24 heures.
+
+Le formulaire de contact (`contact.html`) envoie actuellement vers `envoi.php` et utilise la fonction mail de Hostinger. GitHub Pages ne prend pas en charge PHP : sur Pages, ce formulaire ne pourra pas envoyer de messages tant qu’il n’aura pas été relié à un service de formulaire tiers ou à une fonction serveur. Conservez l’hébergement PHP actuel si le formulaire doit rester fonctionnel sans modification.
+
+Le site comprend aussi `.htaccess`, qui est ignoré par GitHub Pages. Les règles de sécurité et redirections qu’il contient ne seront donc pas appliquées par cet hébergement.
+
+## Documents de travail
+
 Documents de cadrage et analyses préparatoires pour le projet La Traverse, réunis le 8 octobre 2026.
 
 ## Référence du projet
