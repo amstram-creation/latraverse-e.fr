@@ -67,8 +67,8 @@
 <h1 data-r>Le premier pas, un échange<small>Une question, un premier rendez-vous, un projet pour votre structure : je vous réponds personnellement.</small></h1>
 </div>
 </header>
-<section class="sec" id="ecrire" data-nav="Écrire un message" style="padding-top:0" aria-label="Coordonnées et formulaire">
-<div class="wrap deux">
+<section class="sec" id="ecrire" data-nav="Prendre contact" style="padding-top:0" aria-label="Coordonnées">
+<div class="wrap">
 <div>
 <ul class="coord">
 <li data-r><b>Téléphone</b><a href="tel:+33684660709">06 84 66 07 09</a></li>
@@ -77,6 +77,8 @@
 </ul>
 <p class="petit" data-r>Réponse sous quelques jours. En cas d'urgence, composez le 15 ou le 112 ; le 3114 est joignable 24 h/24.</p>
 </div>
+<!-- Formulaire temporairement désactivé. Pour le rétablir, retirer le template et remettre la classe deux sur le conteneur wrap. -->
+<template id="formulaire-contact-desactive">
 <form class="formulaire" action="envoi.php" method="post" data-r>
 <p class="etat etat--ok" data-etat="ok" role="status" hidden>Merci, votre message a bien été envoyé. Je vous réponds rapidement.</p>
 <p class="etat etat--err" data-etat="err" role="alert" hidden>Le message n'a pas pu partir. Vérifiez les champs ou écrivez directement à alinedebecker@gmail.com.</p>
@@ -105,6 +107,7 @@
 <label class="consent"><input type="checkbox" name="consentement" required> J'accepte que mes informations soient utilisées uniquement pour me répondre. Elles ne sont ni partagées, ni utilisées à d'autres fins.</label>
 <p style="margin:0"><button class="btn" type="submit">Envoyer <span class="fl" aria-hidden="true">→</span></button></p>
 </form>
+</template>
 </div>
 </section>
 </main>
