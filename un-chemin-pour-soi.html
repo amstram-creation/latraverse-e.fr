@@ -3,162 +3,140 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Un chemin pour soi — parcours collectif pour les professionnels · La Traverse</title>
-<meta name="description" content="Un parcours collectif pour les professionnels des métiers de la relation et de l'accompagnement : s'arrêter, comprendre, repérer, réguler, se préserver, agir.">
-<meta name="theme-color" content="#1d1f1a">
+<title>Un chemin pour soi — parcours pour les professionnels de santé · La Traverse</title>
+<meta name="description" content="Six rencontres pour préserver son équilibre quand on prend soin des autres : s'arrêter, comprendre, repérer, réguler, se préserver, agir.">
+<meta name="theme-color" content="#262a20">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="La Traverse">
-<meta property="og:title" content="Un chemin pour soi — parcours collectif pour les professionnels · La Traverse">
-<meta property="og:description" content="Un parcours collectif pour les professionnels des métiers de la relation et de l'accompagnement : s'arrêter, comprendre, repérer, réguler, se préserver, agir.">
-<meta property="og:image" content="img/arche.jpg">
+<meta property="og:title" content="Un chemin pour soi — parcours pour les professionnels de santé · La Traverse">
+<meta property="og:description" content="Six rencontres pour préserver son équilibre quand on prend soin des autres : s'arrêter, comprendre, repérer, réguler, se préserver, agir.">
+<meta property="og:image" content="img/arche-1600.webp">
 <link rel="icon" type="image/png" href="img/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/b/b.css">
-<script>document.documentElement.classList.add("js","theme-b")</script>
-<script src="assets/js/main.js" defer></script>
-<script src="assets/b/b.js" defer></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="assets/site.js" defer></script>
 </head>
-<body class="b page-chemin">
+<body class="page-chemin">
 <a class="skip" href="#contenu">Aller au contenu</a>
-
-<div class="voile" aria-hidden="true">
-  <svg viewBox="0 0 64 64"><path d="M14 58 V28 a18 18 0 0 1 36 0 V58"/></svg>
-</div>
-
+<div class="voile" aria-hidden="true"></div>
 <header class="entete">
-  <div class="entete__in">
-    <a class="logo" href="index.html" aria-label="La Traverse, accueil">
-      <img src="img/logo-mark.png" alt="" width="34" height="36">
-      <span class="logo__nom">la traverse</span>
-    </a>
-    <div class="entete__actions">
-      <a class="pastille pastille--plein" href="contact.html">échanger</a>
-      <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><span class="burger__mot">menu</span><span></span><span></span></button>
-    </div>
-    <nav class="nav" id="nav" aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html"><i>00</i>accueil</a></li>
-        <li><a href="accompagnement.html"><i>01</i>accompagnement psy &amp; coaching</a></li>
-        <li><a href="formation.html" aria-current="page"><i>02</i>formation &amp; coaching pro</a></li>
-        <li><a href="approche.html"><i>03</i>l'approche</a></li>
-        <li><a href="marcher.html"><i>04</i>marcher, se ressourcer</a></li>
-        <li><a href="a-propos.html"><i>05</i>à propos</a></li>
-        <li><a href="contact.html"><i>06</i>contact</a></li>
-      </ul>
-      <div class="nav__pied">
-        <p>Aline Debecker — psychologue, coach, formatrice</p>
-        <p><a href="tel:+33684660709">06 84 66 07 09</a> · <a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></p>
-      </div>
-    </nav>
-  </div>
+<div class="entete__in">
+<a class="logo" href="index.html" aria-label="La Traverse — accueil">
+<img src="img/logo-mark.png" alt="" width="38" height="39">
+<span>La Traverse</span>
+</a>
+<div class="bloc-pilule bloc-lieu">
+<button class="pilule pilule--clair" type="button" data-panneau="lieu-panneau" aria-expanded="false" aria-controls="lieu-panneau">
+<span class="lieu__nom">Un chemin pour soi</span><span class="chev" aria-hidden="true"></span>
+</button>
+<div class="panneau lieu-panneau" id="lieu-panneau">
+<p class="panneau__titre">Vous êtes ici : <b>Un chemin pour soi</b> — sur cette page</p>
+<nav id="lieu-liste" aria-label="Sections de la page"></nav>
+</div>
+</div>
+<div class="bloc-pilule">
+<button class="pilule pilule--sombre" type="button" data-panneau="menu" aria-expanded="false" aria-controls="menu">Menu <span class="burger-ico" aria-hidden="true"></span></button>
+<nav class="panneau" id="menu" aria-label="Navigation principale">
+<a href="index.html"><b>Accueil</b><small>La Traverse en quelques mots</small></a>
+<a href="accompagnement.html"><b>Accompagnement psychologique et coaching</b><small>Personnes, parents, adolescents</small></a>
+<a class="sous" href="accompagnement.html#retablissement"><b>Cap vers le rétablissement</b><small>Après une période de soins ou un burn-out</small></a>
+<a href="formation.html" aria-current="page"><b>Formation et accompagnement des professionnels</b><small>Formations, coaching, analyse des pratiques, cohésion</small></a>
+<a class="sous" href="formation.html#coaching"><b>Coaching</b><small>Managers et équipes</small></a>
+<a class="sous" href="formation.html#recul"><b>Analyse des pratiques</b><small>Des espaces pour prendre du recul</small></a>
+<a class="sous" href="un-chemin-pour-soi.html"><b>Un chemin pour soi</b><small>Parcours pour les professionnels de santé</small></a>
+<a class="sous" href="formation.html#cohesion"><b>Journée cohésion</b><small>Une expérience commune</small></a>
+<a href="approche.html"><b>L'approche</b><small>Mission, méthodes et cadre</small></a>
+<a href="marcher.html"><b>Marcher et se ressourcer</b><small>Le mouvement, la nature, Colina</small></a>
+<a href="a-propos.html"><b>À propos d'Aline Debecker</b><small>Parcours et convictions</small></a>
+<a href="contact.html"><b>Contact</b><small>Un premier échange</small></a>
+<div class="panneau__pied"><a href="tel:+33684660709">06 84 66 07 09</a><a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></div>
+</nav>
+</div>
+<a class="pilule pilule--plein" href="contact.html">Prendre contact</a>
+</div>
 </header>
-
+<nav class="rail" aria-label="Sections de la page"></nav>
 <main id="contenu">
-<header class="tete-page">
-  <div class="wrap tete-page__grille">
-    <div>
-      <p class="eyebrow" data-reveal><span class="balise"></span><a href="formation.html" class="fil">Formation</a> · Parcours collectif</p>
-      <h1 data-split>Un chemin <em>pour soi.</em></h1>
-      <p class="lead" data-reveal>Un parcours qui invite les professionnels à faire une pause, mieux comprendre leur fonctionnement, repérer leurs ressources et leurs signaux d'alerte, expérimenter des façons de réguler les tensions, se préserver et identifier des actions concrètes pour la suite.</p>
-    </div>
-    <p class="main-ecrite" data-reveal style="--d:.6s">Prendre soin<br>sans se perdre.</p>
-  </div>
+<header class="tete">
+<div class="wrap tete__grille">
+<div>
+<p class="surtitre" data-r><a class="lien" href="formation.html#recul">Professionnels de santé</a>&nbsp;· Parcours collectif</p>
+<h1 data-r>Un chemin pour soi<small>Six rencontres pour préserver son équilibre quand on prend soin des autres.</small></h1>
+<ul class="sommaire" data-r><li><a href="#parcours">Le parcours</a></li><li><a href="#etapes">Les six étapes</a></li><li><a href="#format">Format</a></li></ul>
+<div class="actions" data-r><a class="btn" href="contact.html?objet=chemin">Demander des informations <span class="fl" aria-hidden="true">→</span></a></div>
+</div>
+<div class="arche tete__img" data-r><img src="img/escalier-800.webp" srcset="img/escalier-800.webp 737w" sizes="(max-width: 860px) 260px, 360px" width="737" height="1600" alt="Un escalier en colimaçon qui monte vers la lumière" decoding="async" fetchpriority="high"></div>
+</div>
 </header>
-
-<section class="horizon" aria-label="Les six étapes du parcours">
-  <div class="horizon__collant">
-    <div class="horizon__piste">
-      <div class="horizon__intro">
-        <p class="eyebrow"><span class="balise"></span>Six étapes</p>
-        <h2>S'arrêter, comprendre, repérer, réguler, <em>se préserver,</em> agir.</h2>
-        <p>Faites défiler pour avancer d'une étape à l'autre.</p>
-      </div>
-      <article class="etape"><span class="etape__num">01</span><h3>S'arrêter</h3><p>Faire le point sur son état, ses besoins, ses ressources et son niveau de tension.</p><p class="etape__issue"><b>À l'issue</b>Prendre conscience de ce qui mérite son attention.</p></article>
-      <article class="etape"><span class="etape__num">02</span><h3>Comprendre</h3><p>Stress, charge émotionnelle, hyper-responsabilité, empathie, perfectionnisme…</p><p class="etape__issue"><b>À l'issue</b>Mettre des mots sur les mécanismes qui peuvent fragiliser.</p></article>
-      <article class="etape"><span class="etape__num">03</span><h3>Repérer</h3><p>Identifier ses signaux personnels : corps, émotions, pensées et comportements.</p><p class="etape__issue"><b>À l'issue</b>Reconnaître plus tôt les signes de déséquilibre.</p></article>
-      <article class="etape"><span class="etape__num">04</span><h3>Réguler</h3><p>Expérimenter respiration, attention, mouvement, récupération et pratiques psychocorporelles.</p><p class="etape__issue"><b>À l'issue</b>Trouver des ressources utilisables au quotidien.</p></article>
-      <article class="etape"><span class="etape__num">05</span><h3>Se préserver</h3><p>Explorer limites, juste distance, assertivité, culpabilité et situations relationnelles difficiles.</p><p class="etape__issue"><b>À l'issue</b>Prendre soin sans se perdre ni tout porter.</p></article>
-      <article class="etape"><span class="etape__num">06</span><h3>Agir</h3><p>Construire son plan de prévention : ressources, vigilance, personnes-relais, prochains pas.</p><p class="etape__issue"><b>À l'issue</b>Passer de la prise de conscience à une action réaliste.</p></article>
-    </div>
-    <div class="horizon__barre" aria-hidden="true"><i></i></div>
-  </div>
+<section class="sec sec--serre" id="parcours" data-nav="Le parcours" aria-labelledby="t-par">
+<div class="wrap deux">
+<div><p class="surtitre" data-r>Le parcours</p><h2 id="t-par" data-r>Faire une pause, <em>pour mieux continuer</em></h2></div>
+<div>
+<p class="lead" data-r>Un parcours collectif qui invite les professionnels à mieux comprendre leur fonctionnement, repérer leurs ressources et leurs signaux d'alerte, expérimenter des façons de réguler les tensions et identifier des actions concrètes pour la suite.</p>
+<p data-r>Chaque rencontre alterne apports courts, échanges entre pairs, réflexion personnelle et expérimentation.</p>
+</div>
+</div>
 </section>
-
-<section class="section" aria-labelledby="t-public">
-  <div class="wrap deux-col">
-    <div>
-      <p class="eyebrow"><span class="balise"></span>Pour qui</p>
-      <h2 id="t-public" data-split>Celles et ceux <em>qui accompagnent.</em></h2>
-    </div>
-    <div>
-      <p class="lead" data-reveal>Les professionnels des métiers de la relation et de l'accompagnement : soin, social, médico-social, éducation, petite enfance… Le contenu est adapté au public et au contexte de chaque structure.</p>
-      <hr class="trait">
-      <h3 data-reveal>Une pédagogie qui sort du cadre</h3>
-      <p data-reveal>Chaque rencontre s'appuie sur des apports courts, des échanges entre pairs, des temps de réflexion et des expérimentations.</p>
-    </div>
-  </div>
+<section class="sec sec--sable" id="etapes" data-nav="Les six étapes" aria-labelledby="t-et">
+<div class="wrap">
+<div class="entete-sec"><div><p class="surtitre" data-r>Six étapes</p><h2 id="t-et" data-r>Six marches, <em>pas à pas</em></h2></div></div>
+<ol class="escalier" data-r><li style="--n:0"><details><summary><i>01</i><b>S'arrêter</b></summary><p>Faire le point sur son état, ses besoins, ses ressources et son niveau de tension.</p><small>Prendre conscience de ce qui mérite son attention.</small></details></li><li style="--n:1"><details><summary><i>02</i><b>Comprendre</b></summary><p>Stress, charge émotionnelle, hyper-responsabilité, empathie, perfectionnisme.</p><small>Mettre des mots sur ce qui peut fragiliser.</small></details></li><li style="--n:2"><details><summary><i>03</i><b>Repérer</b></summary><p>Identifier ses signaux personnels : corps, émotions, pensées, comportements.</p><small>Reconnaître plus tôt les signes de déséquilibre.</small></details></li><li style="--n:3"><details><summary><i>04</i><b>Réguler</b></summary><p>Expérimenter respiration, attention, mouvement, récupération.</p><small>Trouver des ressources utilisables au quotidien.</small></details></li><li style="--n:4"><details><summary><i>05</i><b>Se préserver</b></summary><p>Limites, juste distance, assertivité, culpabilité, situations difficiles.</p><small>Prendre soin sans se perdre ni tout porter.</small></details></li><li style="--n:5"><details><summary><i>06</i><b>Agir</b></summary><p>Construire son plan de prévention : ressources, vigilance, personnes-relais.</p><small>Passer de la prise de conscience à l'action.</small></details></li></ol>
+<p class="petit" data-r style="margin-top:1rem">Cliquez sur une marche pour découvrir chaque palier.</p>
+</div>
 </section>
-
-<section class="section section--serre besoins" aria-labelledby="t-format">
-  <div class="wrap">
-    <h2 id="t-format" class="sr-only">Format et modalités</h2>
-    <div class="format">
-      <div data-reveal><b>Format indicatif</b><p>6 rencontres de 2 h 30</p><small>toutes les 3 à 4 semaines · groupe de 6 à 10 personnes</small></div>
-      <div data-reveal style="--d:.1s"><b>Option</b><p>Version outdoor</p><small>2 marches expérientielles intégrées au parcours</small></div>
-      <div data-reveal style="--d:.2s"><b>Sur mesure</b><p>Adapté à votre structure</p><small>calendrier, contenu et modalités ajustables · sur devis</small></div>
-    </div>
-  </div>
-</section>
-
-<section class="section arche" aria-labelledby="t-cta">
-  <div class="wrap arche__grille">
-    <div class="cadre-img arche__img" data-reveal><img src="img/arche.jpg" alt="Une enfilade d'arches en pierre" loading="lazy" width="1600" height="1195"></div>
-    <div>
-      <h2 id="t-cta" data-split>Construire le parcours <em>avec votre équipe.</em></h2>
-      <p class="lead" data-reveal>Un échange permet de comprendre votre contexte et d'ajuster le format.</p>
-      <p data-reveal><a class="btn" href="contact.html?objet=chemin" data-aimant>Demander des informations <span class="fleche" aria-hidden="true">→</span></a></p>
-    </div>
-  </div>
+<section class="sec" id="format" data-nav="Format" aria-labelledby="t-fo">
+<div class="wrap">
+<div class="entete-sec">
+<div><p class="surtitre" data-r>Pour qui, et comment</p><h2 id="t-fo" data-r>Format <em>indicatif</em></h2></div>
+<p data-r>Pour les équipes et professionnels des hôpitaux, EHPAD, CCAS, centres médico-sociaux, structures de santé et soignants en exercice libéral.</p>
+</div>
+<ul class="tarifs">
+<li data-r><b>Format</b><strong>6 × 2 h 30</strong><span>toutes les 3 à 4 semaines · 6 à 10 personnes</span></li>
+<li data-r style="--d:.06s"><b>Option</b><strong>Version outdoor</strong><span>avec 2 marches expérientielles intégrées</span></li>
+<li data-r style="--d:.12s"><b>Sur mesure</b><strong>Sur devis</strong><span>calendrier, contenu et modalités ajustables</span></li>
+</ul>
+<div class="actions" data-r><a class="btn" href="contact.html?objet=chemin">Construire le parcours avec votre équipe <span class="fl" aria-hidden="true">→</span></a></div>
+</div>
 </section>
 </main>
-
 <footer class="pied">
-  <div class="wrap">
-    <div class="pied__haut">
-      <div>
-        <p class="pied__devise">transformer les passages en possibles.</p>
-        <p>Cabinet à Castillon-du-Gard · consultations à distance.<br>Interventions dans le Gard et alentour.</p>
-      </div>
-      <div>
-        <h2>Explorer</h2>
-        <ul>
-          <li><a href="accompagnement.html">Accompagnement psy &amp; coaching</a></li>
-          <li><a href="formation.html">Formation &amp; coaching pro</a></li>
-          <li><a href="un-chemin-pour-soi.html">Un chemin pour soi</a></li>
-          <li><a href="approche.html">L'approche</a></li>
-          <li><a href="marcher.html">Marcher, se ressourcer</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Contact</h2>
-        <ul>
-          <li><a href="tel:+33684660709">06 84 66 07 09</a></li>
-          <li><a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></li>
-          <li><a href="contact.html">Écrire un message</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="pied__geant" aria-hidden="true">la traverse</p>
-    <div class="pied__bas">
-      <span>© <span data-annee>2026</span> La Traverse — Aline Debecker</span>
-      <a href="mentions-legales.html">Mentions légales &amp; confidentialité</a>
-    </div>
-  </div>
+<p class="pied__marque" aria-hidden="true">La Traverse</p>
+<div class="wrap">
+<div class="pied__haut">
+<div>
+<p class="pied__devise">Transformer les passages en possibles.</p>
+<p>La Traverse — santé mentale et transitions de vie.<br>Aline Debecker, psychologue, coach et formatrice.<br>Cabinet à Castillon-du-Gard · à distance · en marchant.</p>
+</div>
+<div>
+<h2>Explorer</h2>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="accompagnement.html">Accompagnement psychologique et coaching</a></li>
+<li><a href="formation.html">Formation et accompagnement des professionnels</a></li>
+<li><a href="un-chemin-pour-soi.html">Un chemin pour soi</a></li>
+<li><a href="approche.html">L'approche</a></li>
+<li><a href="marcher.html">Marcher et se ressourcer</a></li>
+<li><a href="a-propos.html">À propos</a></li>
+</ul>
+</div>
+<div>
+<h2>Contact</h2>
+<ul>
+<li><a href="tel:+33684660709">06 84 66 07 09</a></li>
+<li><a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></li>
+<li><a href="contact.html">Écrire un message</a></li>
+</ul>
+</div>
+</div>
+<div class="pied__bas">
+<span>© <span data-annee>2026</span> La Traverse — Aline Debecker</span>
+<a href="mentions-legales.html">Mentions légales et confidentialité</a>
+</div>
+</div>
 </footer>
 </body>
 </html>

@@ -3,212 +3,198 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>La Traverse — Transformer les passages en possibles · Aline Debecker</title>
-<meta name="description" content="La Traverse, dédiée à la santé mentale et aux transitions de vie. Accompagnement psy et coaching, formation et coaching professionnel. Cabinet à Castillon-du-Gard et à distance.">
-<meta name="theme-color" content="#1d1f1a">
+<title>La Traverse — Santé mentale et transitions de vie · Aline Debecker, Gard</title>
+<meta name="description" content="Accompagnement psychologique, coaching, formation des professionnels et expériences en nature. Aline Debecker, psychologue, coach et formatrice — Castillon-du-Gard, à distance et en marchant.">
+<meta name="theme-color" content="#262a20">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="La Traverse">
-<meta property="og:title" content="La Traverse — Transformer les passages en possibles · Aline Debecker">
-<meta property="og:description" content="La Traverse, dédiée à la santé mentale et aux transitions de vie. Accompagnement psy et coaching, formation et coaching professionnel. Cabinet à Castillon-du-Gard et à distance.">
-<meta property="og:image" content="img/arche.jpg">
+<meta property="og:title" content="La Traverse — Santé mentale et transitions de vie · Aline Debecker, Gard">
+<meta property="og:description" content="Accompagnement psychologique, coaching, formation des professionnels et expériences en nature. Aline Debecker, psychologue, coach et formatrice — Castillon-du-Gard, à distance et en marchant.">
+<meta property="og:image" content="img/arche-1600.webp">
 <link rel="icon" type="image/png" href="img/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/b/b.css">
-<script>document.documentElement.classList.add("js","theme-b")</script>
-<script src="assets/js/main.js" defer></script>
-<script src="assets/b/b.js" defer></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="assets/site.js" defer></script>
 </head>
-<body class="b page-accueil">
+<body class="page-accueil">
 <a class="skip" href="#contenu">Aller au contenu</a>
-
-<div class="voile" aria-hidden="true">
-  <svg viewBox="0 0 64 64"><path d="M14 58 V28 a18 18 0 0 1 36 0 V58"/></svg>
-</div>
-
+<div class="voile" aria-hidden="true"></div>
 <header class="entete">
-  <div class="entete__in">
-    <a class="logo" href="index.html" aria-label="La Traverse, accueil">
-      <img src="img/logo-mark.png" alt="" width="34" height="36">
-      <span class="logo__nom">la traverse</span>
-    </a>
-    <div class="entete__actions">
-      <a class="pastille pastille--plein" href="contact.html">échanger</a>
-      <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><span class="burger__mot">menu</span><span></span><span></span></button>
-    </div>
-    <nav class="nav" id="nav" aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html" aria-current="page"><i>00</i>accueil</a></li>
-        <li><a href="accompagnement.html"><i>01</i>accompagnement psy &amp; coaching</a></li>
-        <li><a href="formation.html"><i>02</i>formation &amp; coaching pro</a></li>
-        <li><a href="approche.html"><i>03</i>l'approche</a></li>
-        <li><a href="marcher.html"><i>04</i>marcher, se ressourcer</a></li>
-        <li><a href="a-propos.html"><i>05</i>à propos</a></li>
-        <li><a href="contact.html"><i>06</i>contact</a></li>
-      </ul>
-      <div class="nav__pied">
-        <p>Aline Debecker — psychologue, coach, formatrice</p>
-        <p><a href="tel:+33684660709">06 84 66 07 09</a> · <a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></p>
-      </div>
-    </nav>
-  </div>
+<div class="entete__in">
+<a class="logo" href="index.html" aria-label="La Traverse — accueil">
+<img src="img/logo-mark.png" alt="" width="38" height="39">
+<span>La Traverse</span>
+</a>
+<div class="bloc-pilule bloc-lieu">
+<button class="pilule pilule--clair" type="button" data-panneau="lieu-panneau" aria-expanded="false" aria-controls="lieu-panneau">
+<span class="lieu__nom">Accueil</span><span class="chev" aria-hidden="true"></span>
+</button>
+<div class="panneau lieu-panneau" id="lieu-panneau">
+<p class="panneau__titre">Vous êtes ici : <b>Accueil</b> — sur cette page</p>
+<nav id="lieu-liste" aria-label="Sections de la page"></nav>
+</div>
+</div>
+<div class="bloc-pilule">
+<button class="pilule pilule--sombre" type="button" data-panneau="menu" aria-expanded="false" aria-controls="menu">Menu <span class="burger-ico" aria-hidden="true"></span></button>
+<nav class="panneau" id="menu" aria-label="Navigation principale">
+<a href="index.html" aria-current="page"><b>Accueil</b><small>La Traverse en quelques mots</small></a>
+<a href="accompagnement.html"><b>Accompagnement psychologique et coaching</b><small>Personnes, parents, adolescents</small></a>
+<a class="sous" href="accompagnement.html#retablissement"><b>Cap vers le rétablissement</b><small>Après une période de soins ou un burn-out</small></a>
+<a href="formation.html"><b>Formation et accompagnement des professionnels</b><small>Formations, coaching, analyse des pratiques, cohésion</small></a>
+<a class="sous" href="formation.html#coaching"><b>Coaching</b><small>Managers et équipes</small></a>
+<a class="sous" href="formation.html#recul"><b>Analyse des pratiques</b><small>Des espaces pour prendre du recul</small></a>
+<a class="sous" href="un-chemin-pour-soi.html"><b>Un chemin pour soi</b><small>Parcours pour les professionnels de santé</small></a>
+<a class="sous" href="formation.html#cohesion"><b>Journée cohésion</b><small>Une expérience commune</small></a>
+<a href="approche.html"><b>L'approche</b><small>Mission, méthodes et cadre</small></a>
+<a href="marcher.html"><b>Marcher et se ressourcer</b><small>Le mouvement, la nature, Colina</small></a>
+<a href="a-propos.html"><b>À propos d'Aline Debecker</b><small>Parcours et convictions</small></a>
+<a href="contact.html"><b>Contact</b><small>Un premier échange</small></a>
+<div class="panneau__pied"><a href="tel:+33684660709">06 84 66 07 09</a><a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></div>
+</nav>
+</div>
+<a class="pilule pilule--plein" href="contact.html">Prendre contact</a>
+</div>
 </header>
-
+<nav class="rail" aria-label="Sections de la page"></nav>
 <main id="contenu">
 <div class="chargeur" aria-hidden="true">
-  <svg class="chargeur__arche" viewBox="0 0 100 130"><path d="M10 128 V50 a40 40 0 0 1 80 0 V128"/></svg>
-  <span class="chargeur__nb">0</span>
+<svg viewBox="0 0 100 130"><path d="M10 128 V50 a40 40 0 0 1 80 0 V128"/></svg>
+<p>La Traverse</p>
 </div>
-
-<section class="passage" aria-labelledby="titre-passage">
-  <div class="passage__collant">
-    <p class="passage__haut"><span>la traverse</span><span>santé mentale &amp; transitions de vie</span></p>
-    <div class="passage__fenetre"><img src="img/arche.jpg" alt="Une enfilade d'arches en pierre ouvrant sur la lumière" fetchpriority="high" width="1600" height="1195"></div>
-    <h1 class="passage__titre" id="titre-passage">
-      <span class="passage__l passage__l--1">transformer</span>
-      <span class="passage__l passage__l--2"><em>les passages</em></span>
-      <span class="passage__l passage__l--3">en possibles.</span>
-    </h1>
-    <div class="passage__intro">
-      <p>Il arrive que les repères vacillent, que les relations se tendent ou qu'une période de changement demande de trouver de nouvelles ressources.</p>
-    </div>
-  </div>
+<section class="passage" id="ouverture" data-nav="Ouverture" aria-labelledby="t-ouverture">
+<div class="passage__collant">
+<div class="passage__fenetre"><img src="img/arche-800.webp" srcset="img/arche-800.webp 800w, img/arche-1600.webp 1600w" sizes="100vw" width="1600" height="1195" alt="Une enfilade d'arches en pierre qui s'ouvre sur la lumière" decoding="async" fetchpriority="high"></div>
+<h1 class="passage__titre" id="t-ouverture"><span>Transformer</span><span><em>les passages</em></span><span>en possibles.</span></h1>
+<p class="passage__sous"><span>Santé mentale et transitions de vie</span><span>Castillon-du-Gard · à distance · en marchant</span></p>
+<p class="passage__intro">Il arrive que les repères vacillent, que les relations se tendent, qu'un changement demande de nouvelles ressources.</p>
+</div>
 </section>
-
-<section class="b-intro" aria-label="Introduction">
-  <div class="wrap">
-    <p class="b-etiquette">(01) la traverse</p>
-    <p class="b-intro__texte" data-eclaire>La Traverse propose des accompagnements, des formations et des expériences pour <strong>mieux comprendre ce qui se joue,</strong> mobiliser ses ressources et <strong>retrouver du mouvement.</strong></p>
-    <div class="b-intro__pied">
-      <p>Aline Debecker<br><span>psychologue · coach · formatrice</span></p>
-      <p>Cabinet à Castillon-du-Gard<br><span>et consultations à distance</span></p>
-      <a class="b-lien" href="approche.html">notre approche <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
+<section class="sec" id="la-traverse" data-nav="La Traverse" aria-labelledby="t-id">
+<div class="wrap identite identite--seule">
+<div>
+<p class="surtitre" data-r>La Traverse</p>
+<h2 id="t-id" data-r>Accompagner les passages, <em>ouvrir de nouvelles possibilités.</em></h2>
+<p class="lead" data-r>La Traverse accompagne les personnes, les familles, les professionnels et les organisations dans les périodes de questionnement, de difficulté ou de transition, pour aider chacun à retrouver des repères, mobiliser ses ressources et avancer.</p>
+<ul class="trio" data-r aria-label="Trois manières d'avancer"><li>Des accompagnements</li><li>Des formations</li><li>Des expériences</li></ul>
+</div>
+</div>
 </section>
-
-<section class="b-portes" aria-labelledby="titre-portes">
-  <h2 id="titre-portes" class="sr-only">Deux portes d'entrée</h2>
-  <a class="b-porte" href="accompagnement.html" data-curseur="entrer">
-    <img src="img/particuliers.jpg" alt="" loading="lazy" width="1346" height="1400">
-    <span class="b-porte__num">(02) porte un</span>
-    <span class="b-porte__titre">accompagnement <em>psy &amp; coaching</em></span>
-    <span class="b-porte__texte">Pour les personnes, les parents et les adolescents qui souhaitent traverser une difficulté, mieux comprendre leurs relations ou retrouver des ressources.</span>
-    <span class="b-porte__cta">découvrir ↗</span>
-  </a>
-  <a class="b-porte" href="formation.html" data-curseur="entrer">
-    <img src="img/professionnels.jpg" alt="" loading="lazy" width="1393" height="1400">
-    <span class="b-porte__num">(03) porte deux</span>
-    <span class="b-porte__titre">formation &amp; <em>coaching professionnel</em></span>
-    <span class="b-porte__texte">Pour les établissements, équipes et organisations qui souhaitent développer les compétences relationnelles, soutenir les professionnels et faire évoluer les pratiques.</span>
-    <span class="b-porte__cta">découvrir ↗</span>
-  </a>
+<section class="entrees" id="entrees" data-nav="Deux entrées" aria-label="Deux grandes entrées">
+<a class="entree" href="accompagnement.html">
+<img src="img/particuliers-800.webp" srcset="img/particuliers-800.webp 800w, img/particuliers-1600.webp 1346w" sizes="(max-width: 860px) 100vw, 50vw" width="1346" height="1400" alt="" decoding="async" loading="lazy">
+<span class="entree__public">Adultes · adolescents · parents · personnes en rétablissement</span>
+<span class="entree__titre">Accompagnement psychologique <em>et coaching</em></span>
+<span class="entree__texte">Traverser une difficulté, mieux comprendre vos relations, retrouver confiance et ressources.</span>
+<span class="entree__cta">Découvrir <span aria-hidden="true">→</span></span>
+</a>
+<a class="entree" href="formation.html">
+<img src="img/professionnels-800.webp" srcset="img/professionnels-800.webp 800w, img/professionnels-1600.webp 1393w" sizes="(max-width: 860px) 100vw, 50vw" width="1393" height="1400" alt="" decoding="async" loading="lazy">
+<span class="entree__public">Professionnels · équipes · responsables · établissements</span>
+<span class="entree__titre">Formation et accompagnement <em>des professionnels</em></span>
+<span class="entree__texte">Développer les compétences relationnelles, soutenir les équipes et faire évoluer les pratiques.</span>
+<span class="entree__cta">Découvrir <span aria-hidden="true">→</span></span>
+</a>
 </section>
-
-<section class="b-liste" aria-labelledby="titre-liste">
-  <div class="wrap">
-    <div class="b-liste__entete">
-      <p class="b-etiquette">(04) repères</p>
-      <h2 id="titre-liste">ce qui peut <em>vous amener</em></h2>
-    </div>
-    <ul class="b-lignes">
-      <li><a href="accompagnement.html#thematiques" data-apercu="img/particuliers.jpg"><span class="b-lignes__n">01</span><span class="b-lignes__t">transitions de vie</span><span class="b-lignes__c">accompagnement</span></a></li>
-      <li><a href="accompagnement.html#parents" data-apercu="img/galerie-2.jpg"><span class="b-lignes__n">02</span><span class="b-lignes__t">parentalité</span><span class="b-lignes__c">accompagnement</span></a></li>
-      <li><a href="accompagnement.html#adolescents" data-apercu="img/galerie-5.jpg"><span class="b-lignes__n">03</span><span class="b-lignes__t">adolescence</span><span class="b-lignes__c">accompagnement</span></a></li>
-      <li><a href="formation.html#enseignement" data-apercu="img/professionnels.jpg"><span class="b-lignes__n">04</span><span class="b-lignes__t">futurs professionnels</span><span class="b-lignes__c">formation</span></a></li>
-      <li><a href="formation.html#sante" data-apercu="img/galerie-3.jpg"><span class="b-lignes__n">05</span><span class="b-lignes__t">professionnels de santé</span><span class="b-lignes__c">formation</span></a></li>
-      <li><a href="un-chemin-pour-soi.html" data-apercu="img/galerie-4.jpg"><span class="b-lignes__n">06</span><span class="b-lignes__t">un chemin pour soi</span><span class="b-lignes__c">parcours</span></a></li>
-      <li><a href="marcher.html" data-apercu="img/sentier-garrigue.jpg"><span class="b-lignes__n">07</span><span class="b-lignes__t">marcher, se ressourcer</span><span class="b-lignes__c">expérience</span></a></li>
-    </ul>
-  </div>
-  <div class="b-apercu" aria-hidden="true"><img alt=""></div>
+<section class="sec" id="situations" data-nav="Vous vous reconnaîtrez peut-être" aria-labelledby="t-sit">
+<div class="wrap">
+<div class="entete-sec">
+<div><p class="surtitre" data-r>Par où commencer</p><h2 id="t-sit" data-r>Vous vous reconnaîtrez <em>peut-être…</em></h2></div>
+</div>
+<ul class="lignes">
+<li data-r><a href="accompagnement.html#transitions"><img class="lignes__fond" src="img/pont-du-gard-large-800.webp" alt="" loading="lazy" decoding="async"><b>« Je traverse une période de changement »</b><small>Accompagnement</small><span>Reconversion, mobilité, séparation, nouvelle étape de vie : retrouver un cap.</span></a></li>
+<li data-r><a href="accompagnement.html#stress"><img class="lignes__fond" src="img/galerie-4-800.webp" alt="" loading="lazy" decoding="async"><b>« Je me sens dépassé·e »</b><small>Accompagnement</small><span>Stress, anxiété, charge mentale, manque de temps : retrouver de l'air.</span></a></li>
+<li data-r><a href="accompagnement.html#parents"><img class="lignes__fond" src="img/galerie-2-800.webp" alt="" loading="lazy" decoding="async"><b>« La relation avec mon enfant est difficile »</b><small>Parents</small><span>Tensions, difficultés éducatives, épuisement parental.</span></a></li>
+<li data-r><a href="accompagnement.html#adolescents"><img class="lignes__fond" src="img/galerie-5-800.webp" alt="" loading="lazy" decoding="async"><b>« Mon adolescent doit choisir son orientation »</b><small>Adolescents</small><span>Un parcours en quatre séances pour mieux se connaître et choisir en confiance.</span></a></li>
+<li data-r><a href="accompagnement.html#retablissement"><img class="lignes__fond" src="img/sentier-garrigue-800.webp" alt="" loading="lazy" decoding="async"><b>« Je reprends pied après une période difficile »</b><small>Rétablissement</small><span>Après une hospitalisation, un burn-out ou un épisode dépressif : retrouver ses appuis.</span></a></li>
+<li data-r><a href="formation.html#formation"><img class="lignes__fond" src="img/professionnels-800.webp" alt="" loading="lazy" decoding="async"><b>« Notre équipe a besoin de se former, de souffler »</b><small>Professionnels</small><span>Communication, coopération, stress, prévention de l'épuisement.</span></a></li>
+<li data-r><a href="formation.html#cohesion"><img class="lignes__fond" src="img/arches-pierre-800.webp" alt="" loading="lazy" decoding="async"><b>« Notre équipe a besoin de se retrouver »</b><small>Journées de cohésion</small><span>Une journée hors du quotidien pour expérimenter la coopération et la confiance.</span></a></li>
+<li data-r><a href="formation.html#recul"><img class="lignes__fond" src="img/particuliers-800.webp" alt="" loading="lazy" decoding="async"><b>« Je prends soin des autres, et moi ? »</b><small>Professionnels de santé</small><span>Des espaces pour souffler, échanger et se préserver.</span></a></li>
+</ul>
+</div>
 </section>
-
-<section class="b-approche" aria-labelledby="titre-b-approche">
-  <div class="wrap">
-    <p class="b-etiquette">(05) l'approche</p>
-    <h2 id="titre-b-approche" class="b-approche__titre">
-      <span data-reveal>comprendre.</span>
-      <span data-reveal style="--d:.12s"><em>expérimenter.</em></span>
-      <span data-reveal style="--d:.24s">se mettre en mouvement.</span>
-    </h2>
-    <ol class="b-leviers">
-      <li data-reveal><i>01</i>ressources psychologiques</li>
-      <li data-reveal style="--d:.05s"><i>02</i>coaching &amp; PNL</li>
-      <li data-reveal style="--d:.1s"><i>03</i>approches cognitives &amp; comportementales</li>
-      <li data-reveal style="--d:.15s"><i>04</i>corps &amp; mouvement</li>
-      <li data-reveal style="--d:.2s"><i>05</i>nature &amp; expérience</li>
-      <li data-reveal style="--d:.25s"><i>06</i>dynamique relationnelle &amp; collective</li>
-    </ol>
-    <a class="b-lien b-lien--clair" href="approche.html">découvrir l'approche <span aria-hidden="true">↗</span></a>
-  </div>
+<section class="sec sec--sable" aria-label="Conviction">
+<div class="wrap">
+<p class="phrase">Avancer ne veut pas forcément dire aller plus vite. Parfois, il s'agit de s'arrêter, de comprendre, de reprendre confiance <em>ou de regarder autrement.</em></p>
+</div>
 </section>
-
-<section class="b-aline" aria-labelledby="titre-aline">
-  <div class="wrap b-aline__grille">
-    <div class="b-aline__portrait"><img src="img/aline.jpg" alt="Portrait d'Aline Debecker" loading="lazy" width="739" height="1600" data-vitesse=".08"></div>
-    <div>
-      <p class="b-etiquette">(06) aline debecker</p>
-      <h2 id="titre-aline" class="b-citation" data-reveal>« accompagner les passages de vie, <em>sans imposer un chemin tout tracé,</em> mais en aidant chacun à trouver le sien. »</h2>
-      <ul class="b-chiffres">
-        <li data-reveal><strong><span data-compteur="20">20</span>+</strong>ans d'accompagnement</li>
-        <li data-reveal style="--d:.1s"><strong><span data-compteur="15">15</span></strong>ans de formation de professionnels</li>
-      </ul>
-      <a class="b-lien" href="a-propos.html">à propos <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
+<section class="sec sec--sombre" id="aline" data-nav="Aline Debecker" aria-labelledby="t-aline">
+<div class="wrap deux">
+<div class="portrait arche" data-r><img src="img/aline-800.webp" srcset="img/aline-800.webp 739w" sizes="(max-width: 860px) 80vw, 420px" width="739" height="1600" alt="Portrait d'Aline Debecker" decoding="async" loading="lazy"></div>
+<div>
+<p class="surtitre" data-r>Qui vous accompagne</p>
+<h2 id="t-aline" class="citation" data-r>« Accompagner les passages de vie, sans imposer un chemin tout tracé, <em>mais en aidant chacun à trouver le sien.</em> »</h2>
+<p class="lead" data-r>Aline Debecker, psychologue, coach et formatrice.</p>
+<ul class="chiffres" data-r>
+<li><strong><span data-compteur="20">20</span>&nbsp;ans+</strong>d'accompagnement</li>
+<li><strong>Depuis 2011</strong>formatrice de professionnels</li>
+<li><strong><span data-compteur="40">40</span>+</strong>thèmes de formation</li>
+</ul>
+<div class="actions" data-r><a class="btn btn--ligne" href="a-propos.html">Découvrir son parcours <span class="fl" aria-hidden="true">→</span></a></div>
+</div>
+</div>
 </section>
-
-<section class="b-fin" aria-labelledby="titre-fin">
-  <div class="bande" aria-hidden="true"><div class="bande__texte" data-bande><span>santé mentale <em>&amp; transitions de vie</em> —</span><span>transformer les passages <em>en possibles</em> —</span><span>santé mentale <em>&amp; transitions de vie</em> —</span><span>transformer les passages <em>en possibles</em> —</span></div></div>
-  <div class="wrap">
-    <p class="b-etiquette">(07) premier pas</p>
-    <h2 id="titre-fin"><a class="b-geant" href="contact.html" data-curseur="écrire">échangeons<em>.</em></a></h2>
-    <div class="b-fin__infos">
-      <p><a href="tel:+33684660709">06 84 66 07 09</a></p>
-      <p><a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></p>
-      <p>Castillon-du-Gard · à distance</p>
-    </div>
-  </div>
+<section class="sec" id="marcher" data-nav="En marchant" aria-labelledby="t-marcher">
+<div class="wrap deux deux--egal" style="align-items:center">
+<div>
+<p class="surtitre" data-r>Mouvement et nature</p>
+<h2 id="t-marcher" data-r>Parfois, on pense mieux <em>en marchant.</em></h2>
+<p class="lead" data-r>Le corps, la nature et le collectif sont des ressources. Certains accompagnements peuvent se dérouler en marchant, lorsque c'est adapté à votre demande.</p>
+<div class="actions" data-r><a class="btn" href="marcher.html">Marcher et se ressourcer <span class="fl" aria-hidden="true">→</span></a></div>
+</div>
+<div class="arche" style="aspect-ratio:4/5;max-width:440px;justify-self:end;width:100%" data-r><img src="img/garrigue-800.webp" srcset="img/garrigue-800.webp 800w, img/garrigue-1600.webp 1600w" sizes="(max-width: 860px) 90vw, 440px" width="1600" height="1066" alt="Un sentier dans la garrigue face aux Alpilles" decoding="async" loading="lazy"></div>
+</div>
+</section>
+<section class="sec fin" id="contact" data-nav="Prendre contact" aria-labelledby="t-fin" style="padding-top:0">
+<div class="bande" aria-hidden="true"><div class="bande__piste"><span>Transformer les passages en possibles —</span><span>Santé mentale et transitions de vie —</span><span>Transformer les passages en possibles —</span><span>Santé mentale et transitions de vie —</span></div></div>
+<div class="wrap" style="padding-top:clamp(3rem,7vw,5rem)">
+<p class="surtitre" data-r>Le premier pas</p>
+<h2 id="t-fin" data-r><a href="contact.html">Échangeons<em>.</em></a></h2>
+<div class="fin__infos" data-r>
+<a href="tel:+33684660709">06 84 66 07 09</a>
+<a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a>
+<span>Cabinet à Castillon-du-Gard · à distance · en marchant</span>
+</div>
+</div>
 </section>
 </main>
-
 <footer class="pied">
-  <div class="wrap">
-    <div class="pied__haut">
-      <div>
-        <p class="pied__devise">transformer les passages en possibles.</p>
-        <p>Cabinet à Castillon-du-Gard · consultations à distance.<br>Interventions dans le Gard et alentour.</p>
-      </div>
-      <div>
-        <h2>Explorer</h2>
-        <ul>
-          <li><a href="accompagnement.html">Accompagnement psy &amp; coaching</a></li>
-          <li><a href="formation.html">Formation &amp; coaching pro</a></li>
-          <li><a href="un-chemin-pour-soi.html">Un chemin pour soi</a></li>
-          <li><a href="approche.html">L'approche</a></li>
-          <li><a href="marcher.html">Marcher, se ressourcer</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Contact</h2>
-        <ul>
-          <li><a href="tel:+33684660709">06 84 66 07 09</a></li>
-          <li><a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></li>
-          <li><a href="contact.html">Écrire un message</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="pied__geant" aria-hidden="true">la traverse</p>
-    <div class="pied__bas">
-      <span>© <span data-annee>2026</span> La Traverse — Aline Debecker</span>
-      <a href="mentions-legales.html">Mentions légales &amp; confidentialité</a>
-    </div>
-  </div>
+<p class="pied__marque" aria-hidden="true">La Traverse</p>
+<div class="wrap">
+<div class="pied__haut">
+<div>
+<p class="pied__devise">Transformer les passages en possibles.</p>
+<p>La Traverse — santé mentale et transitions de vie.<br>Aline Debecker, psychologue, coach et formatrice.<br>Cabinet à Castillon-du-Gard · à distance · en marchant.</p>
+</div>
+<div>
+<h2>Explorer</h2>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="accompagnement.html">Accompagnement psychologique et coaching</a></li>
+<li><a href="formation.html">Formation et accompagnement des professionnels</a></li>
+<li><a href="un-chemin-pour-soi.html">Un chemin pour soi</a></li>
+<li><a href="approche.html">L'approche</a></li>
+<li><a href="marcher.html">Marcher et se ressourcer</a></li>
+<li><a href="a-propos.html">À propos</a></li>
+</ul>
+</div>
+<div>
+<h2>Contact</h2>
+<ul>
+<li><a href="tel:+33684660709">06 84 66 07 09</a></li>
+<li><a href="mailto:alinedebecker@gmail.com">alinedebecker@gmail.com</a></li>
+<li><a href="contact.html">Écrire un message</a></li>
+</ul>
+</div>
+</div>
+<div class="pied__bas">
+<span>© <span data-annee>2026</span> La Traverse — Aline Debecker</span>
+<a href="mentions-legales.html">Mentions légales et confidentialité</a>
+</div>
+</div>
 </footer>
 </body>
 </html>

@@ -50,8 +50,8 @@ $envois[] = time();
 @file_put_contents($compteur, implode("\n", $envois), LOCK_EX);
 
 $libelles = [
-    'adulte' => 'Accompagnement (adulte)', 'parent' => 'Accompagnement parental', 'ado' => 'Adolescent / enfant',
-    'formation' => 'Formation / structure', 'sante' => 'Professionnels de santé', 'chemin' => 'Un chemin pour soi', 'autre' => 'Autre',
+    'adulte' => 'Accompagnement (adulte)', 'parent' => 'Accompagnement parental', 'ado' => 'Adolescent', 'retablissement' => 'Cap vers le rétablissement',
+    'formation' => 'Formation / structure', 'sante' => 'Groupes de parole / APP', 'chemin' => 'Un chemin pour soi', 'autre' => 'Autre',
 ];
 $categorie = $libelles[$objet] ?? 'Autre';
 
